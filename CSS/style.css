@@ -1,112 +1,37 @@
-/* ===== GENERAL ===== */
+/* =========================
+   PERBAIKAN TATA LETAK
+========================= */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #eef2f3;
-  color: #333;
-}
-
-/* ===== HEADER ===== */
-header {
-  background: #1abc9c;
-  color: white;
-  padding: 30px;
-  text-align: center;
-  border-bottom: 5px solid #149b82;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 32px;
-}
-
-header p {
-  margin: 5px 0 0;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-/* ===== NAVIGASI ===== */
-nav {
-  background: #333;
+  background: #f4f4f4;
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  padding: 12px;
+  flex-direction: column;
+  align-items: center;
 }
 
-nav a {
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: 0.3s;
-  font-weight: bold;
+header, nav, footer {
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
-nav a:hover {
-  background: #1abc9c;
-}
-
-/* ===== KONTEN ===== */
-main {
+main, .konten {
+  width: 100%;
   max-width: 900px;
   background: white;
-  margin: 40px auto;
-  padding: 45px 55px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-  line-height: 1.9;
+  margin: 30px auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  line-height: 1.8;
   text-align: justify;
+  box-sizing: border-box;
 }
 
-/* ===== TEKS & JUDUL ===== */
-h2,
-h3 {
-  color: #1abc9c;
-  margin-top: 25px;
-}
-
-ul,
-ol {
-  margin-left: 20px;
-}
-
-/* ===== TOMBOL KEMBALI ===== */
-button,
-.tombol-home button {
-  padding: 10px 20px;
-  background: #1abc9c;
-  border: none;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover,
-.tombol-home button:hover {
-  background: #149b82;
-  transform: scale(1.04);
-}
-
-/* ===== FOOTER ===== */
-footer {
-  text-align: center;
-  padding: 18px;
-  background: #222;
-  color: white;
-  margin-top: 35px;
-  font-size: 14px;
-}
-
-/* ===== RESPONSIVE MODE ===== */
-@media (max-width: 768px) {
-  main {
-    padding: 25px;
-  }
-
-  nav {
-    flex-wrap: wrap;
-  }
+.konten p, .konten ul, .konten ol {
+  padding-left: 5px;
+  padding-right: 5px;
 }
