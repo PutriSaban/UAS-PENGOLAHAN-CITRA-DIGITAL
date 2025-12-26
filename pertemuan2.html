@@ -19,49 +19,77 @@
     </nav>
 
     <main>
-      <h2>Data Image</h2>
-
+      <h2>Representasi Data Citra Digital</h2>
       <p>
-        Data image merupakan data citra yang diperoleh dari proses akuisisi
-        menggunakan perangkat tertentu. Citra digital disimpan dalam bentuk
-        matriks dua dimensi yang terdiri dari baris dan kolom piksel.
+        Citra digital disimpan dalam bentuk matriks dua dimensi yang terdiri
+        dari elemen-elemen kecil yang disebut piksel (picture element). Setiap
+        piksel memiliki koordinat baris dan kolom yang menunjukkan posisinya
+        dalam citra, serta nilai tertentu yang merepresentasikan intensitas
+        cahaya atau warna.
       </p>
 
-      <h3>Format File Citra</h3>
       <p>
-        Citra digital dapat disimpan dalam berbagai format, seperti JPG, PNG,
-        BMP, dan TIFF. Setiap format memiliki karakteristik masing-masing,
-        terutama dalam hal kualitas dan ukuran file.
+        Nilai piksel pada citra digital sangat bergantung pada jenis citra yang
+        digunakan. Pada citra grayscale, nilai piksel menunjukkan tingkat
+        keabuan, sedangkan pada citra berwarna nilai piksel terdiri dari
+        beberapa komponen warna.
+      </p>
+
+      <h3>Format File Citra Digital</h3>
+      <p>
+        Citra digital dapat disimpan dalam berbagai format file, seperti JPG,
+        PNG, BMP, dan TIFF. Setiap format memiliki karakteristik yang berbeda,
+        terutama dalam hal kualitas gambar, tingkat kompresi, dan ukuran file.
+      </p>
+
+      <p>
+        Format JPG menggunakan kompresi lossy sehingga ukuran file menjadi lebih
+        kecil, namun kualitas gambar dapat berkurang. Sementara itu, format PNG
+        dan BMP cenderung mempertahankan kualitas citra dengan ukuran file yang
+        lebih besar.
       </p>
 
       <h3>Jenis-Jenis Citra Digital</h3>
       <ul>
         <li>
           <strong>RGB Image</strong> adalah citra berwarna yang tersusun dari
-          tiga komponen warna utama, yaitu merah, hijau, dan biru.
+          tiga komponen warna utama, yaitu Red, Green, dan Blue. Kombinasi
+          ketiga warna tersebut menghasilkan berbagai variasi warna.
         </li>
         <li>
-          <strong>Grayscale Image</strong> merupakan citra dengan tingkat
-          keabuan tanpa informasi warna.
+          <strong>Grayscale Image</strong> merupakan citra yang hanya memiliki
+          tingkat keabuan tanpa informasi warna. Citra ini sering digunakan
+          untuk menyederhanakan proses analisis citra.
         </li>
         <li>
-          <strong>Binary Image</strong> hanya memiliki dua nilai piksel, yaitu
-          hitam dan putih.
+          <strong>Binary Image</strong> adalah citra yang hanya memiliki dua
+          nilai piksel, yaitu hitam dan putih. Citra ini biasanya digunakan
+          dalam proses segmentasi dan pengenalan objek.
         </li>
       </ul>
 
-      <h3>Resolusi Citra</h3>
+      <h3>Resolusi Citra Digital</h3>
       <p>
-        Resolusi citra menunjukkan jumlah piksel dalam suatu gambar. Semakin
-        tinggi resolusi, maka detail citra akan semakin jelas, namun ukuran file
-        juga menjadi lebih besar.
+        Resolusi citra menunjukkan jumlah piksel yang menyusun suatu gambar.
+        Semakin tinggi resolusi citra, maka detail gambar akan semakin jelas,
+        namun ukuran file juga akan semakin besar. Oleh karena itu, pemilihan
+        resolusi citra harus disesuaikan dengan kebutuhan aplikasi.
       </p>
+
+      <h3>Latihan</h3>
+      <ol>
+        <li>Apa yang dimaksud dengan piksel pada citra digital?</li>
+        <li>Jelaskan perbedaan antara citra RGB dan citra grayscale.</li>
+        <li>Mengapa terdapat berbagai format file citra digital?</li>
+      </ol>
+
+      <div class="tombol-home">
+        <button onclick="window.location.href='index.html'">
+          ⬅️ Kembali ke Home
+        </button>
+      </div>
     </main>
 
-    <footer>
-      <p>© 2025 - UAS Pengolahan Citra Digital</p>
-    </footer>
-
-    <script src="js/script.js"></script>
+    <footer>© 2025 - UAS Pengolahan Citra Digital</footer>
   </body>
 </html>
